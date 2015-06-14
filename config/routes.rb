@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  get 'users/new'
-
-  root 'blog_pages#home'
+  root            'blog_pages#home'
+  get 'signup' => 'users#new'
   resources :users
 end

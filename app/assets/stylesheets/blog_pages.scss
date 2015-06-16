@@ -60,7 +60,7 @@ hr.small {
 }
 
 .intro-header {
-  background-color: #808080;
+  background-color: black;
   background: no-repeat center center;
   background-attachment: fixed;
   -webkit-background-size: cover;
@@ -74,7 +74,10 @@ hr.small {
   .page-heading {
     padding: 100px 0 50px;
     color: white;
-    -webkit-text-stroke: 1px black;
+  }
+
+  .container {
+    background: rgba(139,139,139, 0.5)
   }
 
   .site-heading,
@@ -82,14 +85,14 @@ hr.small {
     text-align: center;
     h1 {
       margin-top: 0;
-      font-size: 50px;
+      font-size: 60px;
     }
     .subheading {
-      font-size: 26px;
+      font-size: 30px;
       line-height: 1.1;
       display: block;
       font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      font-weight: 300;
+      font-weight: bold;
       margin: 10px 0 0;
     }
   }
@@ -174,6 +177,7 @@ hr.small {
 
 footer {
   padding: 50px 0 65px;
+  background: rgba(200,200,200, 0.5);
 
   .list-inline {
     margin: 0;
@@ -241,8 +245,9 @@ footer {
   font-size: 14px;
   font-weight: 800;
   letter-spacing: 1px;
-  border-radius: 0;
+  border-radius: 10;
   padding: 15px 25px;
+  margin: 20px 0;
 }
 .btn-lg {
   font-size: 16px;
@@ -275,107 +280,4 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #0085a1;
-}
-
-@media only screen and (min-width: 768px) {
-  .intro-header .site-heading,
-  .intro-header .post-heading,
-  .intro-header .page-heading {
-    padding: 150px 0;
-  }
-
-  .intro-header .site-heading h1,
-  .intro-header .page-heading h1 {
-    font-size: 80px;
-  }
-
-  .intro-header .post-heading h1 {
-    font-size: 55px;
-    .subheading {
-      font-size: 30px;
-    }
-  }
-
-  .post-preview > a > .post-title {
-    font-size: 36px;
-  }
-
-  .navbar-custom {
-    background: transparent;
-    border-bottom: 1px solid transparent;
-  
-    .navbar-brand {
-      color: white;
-      padding: 20px;
-    }
-  
-    .navbar-brand:hover,
-    .navbar-brand:focus {
-      color: rgba(255, 255, 255, 0.8);
-    }
-
-    .nav li a {
-      color: white;
-      padding: 20px;
-    }
-  
-    .nav li a:hover,
-    .nav li a:focus {
-      color: rgba(255, 255, 255, 0.8);
-    }
-  }
-}
-
-@media only screen and (min-width: 1170px) {
-  .navbar-custom {
-    -webkit-transition: background-color 0.3s;
-    -moz-transition: background-color 0.3s;
-    transition: background-color 0.3s;
-    /* Force Hardware Acceleration in WebKit */
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  
-    .is-fixed {
-      /* when the user scrolls down, we hide the header right above the viewport */
-      position: fixed;
-      top: -61px;
-      background-color: rgba(255, 255, 255, 0.9);
-      border-bottom: 1px solid #f2f2f2;
-      -webkit-transition: -webkit-transform 0.3s;
-      -moz-transition: -moz-transform 0.3s;
-      transition: transform 0.3s;
-    }
-
-    .is-fixed .navbar-brand {
-      color: #404040;
-    }
-    
-    .is-fixed .navbar-brand:hover,
-    .is-fixed .navbar-brand:focus {
-      color: #0085a1;
-    }
-  
-    .is-fixed .nav li a {
-      color: #404040;
-    }
-    
-    .is-fixed .nav li a:hover,
-    .is-fixed .nav li a:focus {
-      color: #0085a1;
-    }
-    
-    .is-visible {
-      /* if the user changes the scrolling direction, we show the header */
-      -webkit-transform: translate3d(0, 100%, 0);
-      -moz-transform: translate3d(0, 100%, 0);
-      -ms-transform: translate3d(0, 100%, 0);
-      -o-transform: translate3d(0, 100%, 0);
-      transform: translate3d(0, 100%, 0);
-    }
-  }
 }

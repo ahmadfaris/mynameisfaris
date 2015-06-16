@@ -1,0 +1,48 @@
+@media only screen and (min-width: 768px) {
+  .intro-header .site-heading,
+  .intro-header .post-heading,
+  .intro-header .page-heading {
+    padding: 150px 0;
+  }
+
+  .intro-header .site-heading h1,
+  .intro-header .page-heading h1 {
+    font-size: 80px;
+  }
+
+  .intro-header .post-heading h1 {
+    font-size: 55px;
+    .subheading {
+      font-size: 30px;
+    }
+  }
+
+  .post-preview > a > .post-title {
+    font-size: 36px;
+  }
+
+  .navbar-custom {
+    background: transparent;
+    border-bottom: 1px solid transparent;
+  
+    .navbar-brand {
+      color: white;
+      padding: 20px;
+    }
+  
+    .navbar-brand:hover,
+    .navbar-brand:focus {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .nav li a {
+      color: white;
+      padding: 20px;
+    }
+  
+    .nav li a:hover,
+    .nav li a:focus {
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+}

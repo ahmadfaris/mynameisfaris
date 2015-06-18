@@ -56,6 +56,10 @@ hr.small {
       font-size: 12px;
       font-weight: 800;
       letter-spacing: 1px;
+
+      ul li{
+        background-color: red;
+      }
     }
 }
 
@@ -77,7 +81,7 @@ hr.small {
   }
 
   .container {
-    background: rgba(139,139,139, 0.5)
+    background: rgba(0,0,0, 0.4)
   }
 
   .site-heading,

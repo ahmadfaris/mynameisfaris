@@ -1,0 +1,40 @@
+@media only screen and (max-width: 767px) {
+  .navbar-custom {
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  
+    .container-fluid{
+      background: transparent;
+      border-bottom: 1px solid transparent;
+    
+      .navbar-brand {
+        color: white;
+        padding: 20px;
+      }
+    
+      .navbar-brand:hover,
+      .navbar-brand:focus {
+        color: #00FA00;
+      }
+
+      .nav li a {
+        color: white;
+        padding: 20px;
+      }
+    
+      .nav li a:hover,
+      .nav li a:focus {
+        color: #00FA00;
+      }
+    }
+  }
+}
